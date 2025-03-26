@@ -134,7 +134,7 @@
       } else {
         console.log("AndroidInterface not found!");
         if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.unityHandler) {
-          console.log("All Calls Logs : Sending to IOS: ");
+          console.log("All Calls Logs : Sending to IOS: " + message);
           window.webkit.messageHandlers.unityHandler.postMessage(message);
         }
       }
